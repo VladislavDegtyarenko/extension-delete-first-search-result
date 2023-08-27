@@ -1,0 +1,78 @@
+.new-sidebar {
+  margin-left: auto;
+}
+
+.delete-first-btn {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1;
+  background-color: transparent;
+  color: #fe6287;
+  border: solid 0.25em currentColor;
+  border-radius: 0.25em;
+  padding: 0.5em 1em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.delete-first-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 1em currentColor;
+  opacity: 0;
+  user-select: none;
+  transition: opacity 0.15s;
+}
+
+.delete-first-btn img {
+  margin-right: 1em;
+}
+
+.delete-first-btn:hover::before {
+  opacity: 0.5;
+}
+
+.delete-first-btn.disabled {
+  filter: saturate(0);
+  pointer-events: none;
+  user-select: none;
+}
+
+.fade-out {
+  opacity: 0;
+  height: 0px;
+  transition: opacity 1s;
+  animation: fade-out-animation var(--fade-out-duration);
+}
+
+@keyframes fade-out-animation {
+  0% {
+    opacity: 1;
+    height: var(--starting-height);
+    display: block;
+    overflow: unset;
+  }
+
+  50% {
+    opacity: 0;
+    height: var(--starting-height);
+    overflow: hidden;
+    display: flex;
+  }
+
+  100% {
+    opacity: 0;
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+  }
+}

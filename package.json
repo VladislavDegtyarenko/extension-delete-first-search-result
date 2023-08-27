@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "tsc && node copy-files.js"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.244",
+    "fs-extra": "^11.1.1",
+    "typescript": "^5.2.2"
+  }
+}
