@@ -2,15 +2,19 @@
 
 This extension adds a "Delete First Result" button at the top right corner on a Google search results page. With a button click, the extension grabs a first search result, runs a smooth fade out animation and then deletes it from a DOM. Developed by Vladyslav Dihtiarenko.
 
+<img src="https://github.com/VladislavDegtyarenko/extension-delete-first-search-result/assets/62521930/f9629f4a-f9ef-4e54-9207-cc7c257c1846" style="width: 600px; height: auto;" />
+<img src="https://github.com/VladislavDegtyarenko/extension-delete-first-search-result/assets/62521930/ae1ff9fa-8c6f-47e3-a43e-3eb10211b031" style="width: 600px; height: auto;" />
+
+
 ## Core Technologies
 
--- [TypeScript](https://www.typescriptlang.org/)
--- [fs-extra](https://www.npmjs.com/package/fs-extra)
+- [TypeScript](https://www.typescriptlang.org/)
+- [fs-extra](https://www.npmjs.com/package/fs-extra)
 
 ## Works in
 
--- Chrome
--- Firefox
+- Chrome
+- Firefox
 
 ## Notes and comments about my implementation
 
@@ -47,6 +51,9 @@ To give a content script an access to the icons using `chrome.runtime.getURL()`,
 The **main implementation**:
 
 1. Select a div element with id `rcnt` that wraps a search results wrapper and optional side search results wrapper.
+
+<img src="https://github.com/VladislavDegtyarenko/extension-delete-first-search-result/assets/62521930/72024d4c-7837-44a7-9939-767f1f5935c0" style="width: 800px; max-width:100%; height: auto;" />
+
 2. Create a button using `DeleteButton` Class
 3. Append a button to that `div#rcnt` using the following rules:
    a. if `div#rcnt` contains a side search results wrapper, add a button as a first child (prepend)
@@ -65,6 +72,10 @@ The DeleteButton has its own **methods**:
 ### Popup window
 
 A simple and descriptive popup about the extension. Contains two screenshots that demonstrates how the button is placed in a couple of scenarious such as light/dark mode, with or without side search results container.
+
+<img src="https://github.com/VladislavDegtyarenko/extension-delete-first-search-result/assets/62521930/72a5eb02-b543-4ffa-97c1-e7940c691fed" style="width:800px;height:auto;display:block"/>
+
+
 
 ## How to install the extension?
 
