@@ -126,6 +126,6 @@ A simple and descriptive popup about the extension. Contains two screenshots tha
 ## Contact info
 
 [Portfolio Website](https://vddeveloper.online/)
-[Telegram](t.me/Vladislav_Degtyarenko)
-[Email](mailto:vladislavdegtyarenko@gmail.com)
-[Phone](tel:+380977139295)
+[Telegram: @Vladislav_Degtyarenko](t.me/Vladislav_Degtyarenko)
+[Email: vladislavdegtyarenko@gmail.com](mailto:vladislavdegtyarenko@gmail.com)
+[Phone: +380977139295](tel:+380977139295)
